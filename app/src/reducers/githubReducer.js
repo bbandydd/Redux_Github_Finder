@@ -1,5 +1,5 @@
 import { handleActions } from 'redux-actions';
-import { GithubState } from '../../constants/models';
+import { GithubState } from '../constants/models';
 
 const githubReducer = handleActions({
     GET_GITHUB_SUCCESS: (state, { payload}) => (
