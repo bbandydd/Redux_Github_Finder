@@ -1,16 +1,8 @@
 import { connect } from 'react-redux';
 import ResultPage from '../../components/ResultPage';
 
-const mapStateToProps = () => {
-    return {
+const mapStateToProps = (state) => ({
+    data: state.github.getIn(['data'])
+})
 
-    }
-};
-
-const mapDispatchToProps = (dispatch) => {
-    return {
-
-    }
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(ResultPage);
+export default connect(mapStateToProps)(ResultPage);

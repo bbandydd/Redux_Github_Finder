@@ -5,7 +5,8 @@ import TextField from 'material-ui/TextField';
 
 const HomePage = ({
     userId,
-    onChangeUserId
+    onChangeUserId,
+    onSubmitUserId
 }) => (
     <div>
         <TextField  
@@ -18,7 +19,7 @@ const HomePage = ({
                 query: {userId}
             }}
         >
-            <RaisedButton label="Submit" />
+            <RaisedButton label="Submit" onClick={() => {onSubmitUserId(userId)}} primary/>
         </Link>
     </div>
 )

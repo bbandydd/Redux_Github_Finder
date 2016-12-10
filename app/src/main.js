@@ -8,6 +8,7 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 import store from './stores/index'
 
 import Main from './components/Main';
+import HomePageContainer from './containers/HomePageContainer';
 import ResultPageContainer from './containers/ResultPageContainer';
 
 injectTapEventPlugin();
@@ -17,6 +18,7 @@ render(
         <MuiThemeProvider>
             <Router history={browserHistory}>
                 <Route path="/" component={Main}>
+                    <IndexRoute component={HomePageContainer} />
                     <Route path="/result" component={ResultPageContainer} />
                 </Route>
             </Router>

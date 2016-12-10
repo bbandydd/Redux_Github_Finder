@@ -1,1 +1,2 @@
+export const GET_GITHUB_SUCCESS = 'GET_GITHUB_SUCCESS';
 export const CHANGE_USER_ID = 'CHANGE_USER_ID';
