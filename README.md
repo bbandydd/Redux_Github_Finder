@@ -1,4 +1,4 @@
-# Google Map
+# Redux Github Finder
 
 - initialize:
 
